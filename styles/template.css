@@ -1,0 +1,109 @@
+body { font-family: Verdana, sans-serif;
+       background-color: #3d8982;
+       color: white;
+     }
+
+a { text-decoration: none;
+   }
+a, a:hover, a:active, a:visited {text-decoration: none;
+                                }
+
+
+
+/*********************************
+ CONTAINERS AND GRIDS
+*********************************/
+
+/*Note: column, float, clear, and vertical-align have no effect on a grid container.*/
+
+.container {
+    
+      display: grid;
+      padding:60pt;
+	
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr; 
+         /* there are five values for five columns, each column gets a relative 
+           width in relation to the grid*/
+    
+      grid-template-rows: 10% 45% 35% 10%;
+      grid-column-gap: 10px;
+	  grid-row-gap: 5px;
+         /*this means there are three rows*/
+     
+    
+    }
+
+.container div img { width: 100%;
+				  height: 100%;
+					
+      			     }
+
+
+.main_1 {
+  grid-area: main_1;
+  grid-column:2/5;
+  grid-row: 2/3;
+
+ 
+}
+
+.main_2 {
+	
+  grid-area: main_2;
+  grid-column:5/8;
+  grid-row: 2/3;
+
+
+}
+
+.main_3 {
+  grid-area: main_3;
+  grid-column:8/11;                                          
+  grid-row: 2/3;
+
+}
+
+.main_4 {
+  grid-area: main_1;
+  grid-column:2/4;
+  grid-row: 3/4;
+ 
+
+}
+
+.main_5 {
+  grid-area: main_2;
+  grid-column:4/7;
+  grid-row: 3/4;
+
+
+}
+
+.main_6 {
+  grid-area: main_3;
+  grid-column:7/11;                                           
+  grid-row: 3/4;
+
+}
+
+.footer {
+  grid-area: footer;
+  grid-row: 4/5;	
+  grid-column: 1/6;
+}
+
+
+
+/*When you leave an empty space between the track values, the grid lines are automatically assigned numerical names*/
+
+
+
+
+.box {;}
+
+
+#navigation {;}
+
+ul {;}
+
+li {;}
